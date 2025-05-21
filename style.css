@@ -1,25 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 2rem;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 form {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-input, select, button {
-  width: 100%;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  box-sizing: border-box;
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+div input[type="radio"] + label {
+  margin-right: 30px;
+  font-weight: normal;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 #resultadoConversao {
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
